@@ -1,4 +1,4 @@
-// KanjiRepeater 2.0
+// kanjika
 // Julian Wittmann
 // 2016-07-05
 
