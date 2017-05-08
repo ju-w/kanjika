@@ -1,0 +1,92 @@
+/*body {
+    background-color: lightgrey;
+    border-style: dotted;
+}*/
+
+.main {
+    max-width: 500px;
+    margin: auto;
+    /*background-color: lightgreen;*/
+}
+
+#play {
+    /*background-color: powderblue;*/
+}
+
+#setup {
+    /*background-color: lightyellow;*/
+}
+
+#kanji {
+    /*background-color: #c1c1c1;*/
+    /*margin: 20px;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    font-size: 60px;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    text-align: center;
+    /*line-height: 100px;*/
+}
+
+.button {
+    background-color:#d1d1d1;
+    /*border: solid;*/
+    margin: 8px;
+    /*color: white;*/
+    padding: 30px 5px;
+    text-align: center;
+    /*text-decoration: none;*/
+    /*display: inline-block;*/
+    /*font-size: 16px;*/
+}
+.button:hover{
+    background-color:#c1c1c1;
+}
+
+html, body {
+    /*background-color: lightgrey;*/
+    /*border-style: solid;*/
+    font-family: sans-serif;
+    width:100%;
+    overflow-x:hidden;
+}
+
+
+
+body > * > *  {
+    /*border-style: solid;*/
+}
+
+@keyframes redflash {
+  to {
+    background-color: #FFCDD2;
+  }
+}
+
+@keyframes greenflash {
+  to {
+    background-color: #C8E6C9;
+  }
+}
+
+@-webkit-keyframes redflash {
+  to {
+    background-color: #FFCDD2;
+  }
+}
+
+@-webkit-keyframes greenflash {
+  to {
+    background-color: #C8E6C9;
+  }
+}
+
+.red {
+  animation: redflash 0.3s 2 alternate ease-out;
+  -webkit-animation: redflash 0.3s 2 alternate ease-out;
+}
+
+.green {
+  animation: greenflash 0.3s 2 alternate ease-out;
+  -webkit-animation: greenflash 0.3s 2 alternate ease-out;
+}

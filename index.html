@@ -1,0 +1,59 @@
+<!doctype html>
+<head>
+  <title>Learn, practice and repeat japanese Kanji with Kanjika</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Learn, practice and repeat japanese Kanji with Kanjika. Free and easy to use online Tool - no registration.">
+  <meta name="keywords" content="japanese, kanji, learn, repeat, practice, practise">
+  <meta name="author" content="Julian Wittmann">
+  <link rel="stylesheet" href="./default.css">
+  <script src="grade1.js"></script>
+  <script src="grade2.js"></script>
+  <script src="grade3.js"></script>
+  <script src="grade4.js"></script>
+  <script src="grade5.js"></script>
+  <script src="grade6.js"></script>
+  <script src="functions.js"></script>
+  </head>
+<body onload="newGame()">
+  <div class="main">
+    <div id="play">
+    <!-- Play-Area -->
+      <div id="kanji">六 goes here</div>
+      <div id="buttons"></div>
+      <div id="info-panel-1">村 = village</div>
+      <div id="info-panel-2">村 = village</div>
+      <div id="statistics">70 of 80 / 1 failed</div>
+    </div>
+    <div id="setup">
+    <!-- Setup-Area -->
+      <div id="sets">
+        <label><input type="checkbox" id="kanji-set1" checked="checked">First grade</label> (80 kanji)
+        <a href="http://en.wikipedia.org/wiki/Ky%C5%8Diku_kanji#Second_grade_.28160_kanji.29" target="_blank">List</a><br>
+        <label><input type="checkbox" id="kanji-set2" checked="checked">Second grade</label> (160 kanji)
+        <a href="http://en.wikipedia.org/wiki/Ky%C5%8Diku_kanji#Second_grade_.28160_kanji.29" target="_blank">List</a><br>
+        <label><input type="checkbox" id="kanji-set3">Third grade</label> (200 kanji)
+        <a href="http://en.wikipedia.org/wiki/Ky%C5%8Diku_kanji#Third_grade_.28200_kanji.29" target="_blank">List</a><br>
+        <label><input type="checkbox" id="kanji-set4">Fourth grade</label> (200 kanji)
+        <a href="http://en.wikipedia.org/wiki/Ky%C5%8Diku_kanji#Fourth_grade_.28200_kanji.29" target="_blank">List</a><br>
+        <label><input type="checkbox" id="kanji-set5">Fifth grade</label> (185 kanji)
+        <a href="http://en.wikipedia.org/wiki/Ky%C5%8Diku_kanji#Fifth_grade_.28185_kanji.29" target="_blank">List</a><br>
+        <label><input type="checkbox" id="kanji-set6">Sixth grade</label> (181 kanji)
+        <a href="http://en.wikipedia.org/wiki/Ky%C5%8Diku_kanji#Sixth_grade_.28181_kanji.29" target="_blank">List</a><br>
+      </div>
+      <div id="readings">
+        <label><input type="checkbox" onclick="changeReading()" id="show-on" checked="checked">Show On’yomi</label><br>
+        <label><input type="checkbox" onclick="changeReading()" id="show-kun" checked="checked">Show Kun’yomi</label><br>
+        <label><input type="checkbox" onclick="changeReading()" id="show-english" checked="checked">Show English</label><br>
+        <label><input type="checkbox" onclick="changeReading()" id="show-german">Show German</label>
+      </div>
+      <div id="button-count-div">
+        <label> Buttons <br>
+          <input id="button-count" type="number" value="4" onchange="newButtons(this.value)">
+        </label>
+      </div>
+      <div id="start-button">
+        <input type="button" value="START" onclick="newGame()">
+      </div>
+    </div>
+  </div>
+</body>
